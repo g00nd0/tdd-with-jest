@@ -13,7 +13,7 @@ function findMultiples(base, limit) {
   const multiples = [];
   let i = 1;
 
-  while (i === 1 || multiples[multiples.length - 1] < limit) {
+  while (i === 1 || limit - multiples[multiples.length - 1] >= 5) {
     multiples.push(base * i);
     i++;
   }
@@ -21,6 +21,6 @@ function findMultiples(base, limit) {
   return multiples;
 }
 
-console.log(findMultiples(2, 6));
+console.log(findMultiples(5, 59));
 
 module.exports = findMultiples;
