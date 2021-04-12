@@ -9,5 +9,5 @@ test("array should return 5", function () {
 });
 
 test("array should return 16", function () {
-  expect(sumWithoutHighestAndLowest([6, 10, 2, 1, 1, 8, 10])).toEqual(5);
+  expect(sumWithoutHighestAndLowest([6, 10, 2, 1, 1, 8, 10])).toEqual(16);
 });
