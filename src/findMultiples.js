@@ -21,6 +21,4 @@ function findMultiples(base, limit) {
   return multiples;
 }
 
-console.log(findMultiples(3, 18));
-
 module.exports = findMultiples;
