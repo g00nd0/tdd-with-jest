@@ -23,3 +23,18 @@ test("balance should return 6000", function () {
   account.deposit(1000);
   expect(account.getBalance()).toEqual(6000);
 });
+
+test("balance should return -1000", function () {
+  account.withdraw(7000);
+  expect(account.getBalance()).toEqual(-1000);
+});
+
+test("balance should return -1000", function () {
+  account.withdraw(1000);
+  expect(account.getBalance()).toEqual(-1000);
+});
+
+test("balance should return 500", function () {
+  account.deposit(1500);
+  expect(account.getBalance()).toEqual(500);
+});
